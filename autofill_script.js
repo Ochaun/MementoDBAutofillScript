@@ -19,13 +19,12 @@ function getAPIdata(term){
 		stuff["title"] = name;
 		stuff["description"] = details + extra;
 		stuff["model"] = model;
-		stuff
 
 		lst.push(stuff);
 		return lst;
 
 	} else {
-		var name = "ERROR with getting info feom api!";
+		var name = "ERROR with getting info from api!";
 		var stuff = new Object();
 		var lst = [];
 
