@@ -17,15 +17,15 @@ function getAPIdata(e) {
 
 function setLibCategory(e) {
   switch (!0) {
-    case /Pet Sup/.test(e):
+    case /Animals /.test(e):
       return "Pet";
-    case /Baby/.test(e):
+    case /Baby /.test(e):
       return "Baby";
     case /> Jewelery/.test(e):
       return "Jewelry";
-    case /Clothing >|Clothing Accessories|Costumes /.test(e):
+    case /^Apparel/.test(e):
       return "Clothing";
-    case /Hobbies/.test(e):
+    case /^Arts/.test(e):
       return "Art";
     case /Party & Celebration|> Decor >/.test(e):
       return "Decorations";
@@ -35,17 +35,17 @@ function setLibCategory(e) {
       return "Camera";
     case /Electronics/.test(e):
       return "Electronics";
-    case /Food,/.test(e):
+    case /^Food/.test(e):
       return "Food";
     case /Furni/.test(e):
       return "Furniture";
     case /Hardw/.test(e):
       return "Tools";
-    case /Health Care /.test(e):
+    case /Health Care/.test(e):
       return "Health";
     case /Health/.test(e):
       return "Beauty";
-    case /Household Appliances/.test(e):
+    case /Household Appliances|Kitchen A/.test(e):
       return "Small Appliances";
     case /Cleaning Supplies|Paper Products|Garbage Bags|Shoe Care|Waste /.test(e):
       return "Cleaning Supplies";
@@ -55,8 +55,6 @@ function setLibCategory(e) {
       return "Organizers";
     case /Kitchen Appliance A/.test(e):
       return "Miscellaneous";
-    case /Kitchen A/.test(e):
-      return "Small Appliances";
     case /Kitchen O/.test(e):
       return "Organizers";
     case /Cookware |Kitchen Too/.test(e):
@@ -71,7 +69,7 @@ function setLibCategory(e) {
       return "Linens";
     case /Lug/.test(e):
       return "Organizers";
-    case /Media/.test(e):
+    case /^Media/.test(e):
       return "Media";
     case /Office/.test(e):
       return "Office Supplies";
