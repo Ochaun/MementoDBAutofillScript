@@ -7,6 +7,8 @@ function getAPIdata(e) {
       r.img = r.images[0],
       r.description = r.details + "\nbrand: " + r.brand + "\ncolor: " + r.color + "\nsize: " + r.size + "\ndimension: " + r.dimension + "\nweight: " + r.weight + "\ncategory: " + r.category,
       r.category = setLibCategory(r.category),
+		r.price = r.highest_recorded_price
+		r.store = r.offers[0].merchant
       [r];
   }
   return [{
